@@ -1,0 +1,248 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block 'mainsection'%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Stem-Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png'%}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="{% static 'css/variables.css'%}" rel="stylesheet">
+  <link href="{% static 'css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ZenBlog
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  
+  
+  <main id="main">
+
+    <!-- ======= Hero Slider Section ======= -->
+    <!-- <section id="hero-slider" class="hero-slider">
+      <div class="container-md" data-aos="fade-in">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper sliderFeaturedPosts">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url({% static 'img/post-slide-1.jpg'%});">
+                    <div class="img-bg-inner">
+                      <h2>Hi</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url({% static 'img/post-slide-2.jpg'%});">
+                    <div class="img-bg-inner">
+                      <h2>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url({% static 'img/post-slide-3.jpg'%});">
+                    <div class="img-bg-inner">
+                      <h2>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url({% static 'img/post-slide-4.jpg'%});">
+                    <div class="img-bg-inner">
+                      <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="custom-swiper-button-next">
+                <span class="bi-chevron-right"></span>
+              </div>
+              <div class="custom-swiper-button-prev">
+                <span class="bi-chevron-left"></span>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>End Hero Slider Section -->
+
+
+    <!-- Science section -->
+    <section>
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header d-flex justify-content-between align-items-center mb-5" style="margin-bottom: -2rem!important;">
+          <h2>Science</h2>
+          <div>
+            <a href="profile/categories/1" class="more">See All Science-blog here</a>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="d-md-flex post-entry-2 half mt-5">
+            <a href="#" class="me-4 thumbnail order-2">
+              <img src="{% static 'img/science.jpg'%}" alt="" class="img-fluid" style="padding-top: 60px;">
+            </a>
+            <div class="pe-md-5 mt-4 mt-md-0">
+              <div class="post-meta mt-4">About Science-blog</div>
+              <!-- <h2 class="mb-4 display-4">Mission &amp; Vision</h2> -->
+
+              <p style="text-align: justify;">Our science blog is dedicated to the exploration and dissemination of scientific knowledge, research, and discoveries. It serves as a dynamic hub where individuals passionate about science, including scientists, educators, journalists, and enthusiasts, converge to share their insights and expertise with a global audience. These blogs cover an extensive array of scientific disciplines, from the microcosms of cellular biology to the macrocosms of cosmology. They act as bridges between the scientific community and the general public, breaking down complex concepts and research findings into accessible, digestible formats. Through articles, essays and interactive content, science blogs aim to nurture curiosity, inspire critical thinking, and encourage a profound appreciation for the intricacies of the natural world and the frontiers of human understanding. They are essential tools for fostering scientific literacy, fostering informed discourse, and igniting a passion for discovery in individuals of all ages.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End of science section -->
+
+    <section style="margin-top: -5rem!important;">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header d-flex justify-content-between align-items-center mb-5" style="margin-bottom: -2rem!important;">
+          <h2>Technology</h2>
+          <div>
+            <a href="profile/categories/2" class="more">See All Technology-blog here</a>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="d-md-flex post-entry-2 half mt-5">
+            <a href="#" class="me-4 thumbnail">
+              <img src="{% static 'img/technology.jpg'%}" alt="" class="img-fluid" style="padding-top: 60px;">
+            </a>
+            <div class="pe-md-5 mt-4 mt-md-0" style="padding-left: 20px;">
+              <div class="post-meta mt-4">About Technology-blog</div>
+              
+
+              <p style="text-align: justify;">A tech blog stands as a virtual portal at the forefront of the ever-evolving digital landscape. It is a dynamic space where tech enthusiasts, industry experts, innovators, and curious minds converge to explore, critique, and celebrate the intricate tapestry of modern technology. Technology blogs are a multifaceted resource, dissecting everything from the hottest consumer gadgets and cutting-edge software to the disruptive forces reshaping industries. These blogs provide an invaluable blend of tech reviews, hands-on demonstrations, insightful analyses, and thought-provoking commentary. They're not just about showcasing the latest tech trends; they're also about demystifying technology for a broader audience. By breaking down intricate concepts, translating tech jargon into understandable terms, and spotlighting the societal and cultural implications of technological advancements, tech blogs foster digital literacy, empower consumers, and spark conversations about the role of technology in our lives, both today and in the future.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End of science section -->
+
+    <section style="margin-top: -5rem!important;">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header d-flex justify-content-between align-items-center mb-5" style="margin-bottom: -2rem!important;">
+          <h2>Education</h2>
+          <div>
+            <a href="profile/categories/3" class="more">See All Education-blog here</a>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="d-md-flex post-entry-2 half mt-5">
+            <a href="#" class="me-4 thumbnail order-2">
+              <img src="{% static 'img/edu.jpg'%}" alt="" class="img-fluid" style="padding-top: 60px;">
+            </a>
+            <div class="pe-md-5 mt-4 mt-md-0">
+              <div class="post-meta mt-4">About education-blog</div>
+              
+
+              <p style="text-align: justify;">An education blog stands as a digital haven, dedicated to the advancement of teaching, learning, and educational discourse. It serves as a versatile platform where educators, students, parents, and lifelong learners gather to explore the multifaceted world of education. These blogs are vibrant spaces that encompass a diverse range of subjects, from pedagogical methodologies and classroom innovations to discussions about the challenges and opportunities in the educational landscape. They offer an extensive repository of educational resources, including lesson plans, curriculum guides, and educational technology reviews. Education blogs nurture a community of passionate educators who share their experiences, best practices, and insights to inspire and empower one another. Moreover, these blogs are invaluable to parents, providing them with a wealth of advice, tips, and strategies to support their children's educational journeys. Ultimately, education blogs serve as beacons of knowledge, bridging the gap between theory and practice, and advocating for the transformative power of education in shaping a brighter future.</p>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End of science section -->
+
+    <section style="margin-top: -5rem!important;">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-header d-flex justify-content-between align-items-center mb-5" style="margin-bottom: -2rem!important;">
+          <h2>Medicine</h2>
+          <div>
+            <a href="profile/categories/4" class="more">See All Medical-blog here</a>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="d-md-flex post-entry-2 half mt-5">
+            <a href="#" class="me-4 thumbnail">
+              <img src="{% static 'img/medicine.jpg'%}" alt="" class="img-fluid" style="padding-top: 60px;">
+            </a>
+            <div class="pe-md-5 mt-4 mt-md-0" style="padding-left: 20px;">
+              <div class="post-meta mt-4">About Medicine-blog</div>
+              
+
+              <p style="text-align: justify;">An education blog stands as a digital haven, dedicated to the advancement of teaching, learning, and educational discourse. It serves as a versatile platform where educators, students, parents, and lifelong learners gather to explore the multifaceted world of education. These blogs are vibrant spaces that encompass a diverse range of subjects, from pedagogical methodologies and classroom innovations to discussions about the challenges and opportunities in the educational landscape. They offer an extensive repository of educational resources, including lesson plans, curriculum guides, and educational technology reviews. Education blogs nurture a community of passionate educators who share their experiences, best practices, and insights to inspire and empower one another. Moreover, these blogs are invaluable to parents, providing them with a wealth of advice, tips, and strategies to support their children's educational journeys. Ultimately, education blogs serve as beacons of knowledge, bridging the gap between theory and practice, and advocating for the transformative power of education in shaping a brighter future.</p>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End of science section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
+{% endblock %}

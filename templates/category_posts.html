@@ -1,0 +1,35 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block 'postlist' %}
+
+<head>
+    <title>Blog Post List</title>
+</head>
+<body>
+    <h1>Posts in {{ category.name }}</h1>
+   
+    
+
+    <div style="padding:3em 0em;">
+        <div class="container" style="padding-left: 190px;">
+            <div class="row row-cols-1 row-cols-md-4 g-4" style="grid-gap: 40px !important; ">
+          {% for post in posts %}
+          <div class="card mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 10px;">
+            <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }} Image" style="height: 230px;">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+
+              <p class="card-text">{{post.content|slice:":200"}}</p>
+
+             
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        </div>
+        </div>
+</body>
+{% endblock %}
+
+
+

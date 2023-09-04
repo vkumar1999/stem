@@ -1,0 +1,88 @@
+{% extends 'layouts.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="{% static '/img/favicon.png'%}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <!--Template Main CSS Files -->
+  <link href="{% static 'css/variables.css'%}" rel="stylesheet">
+  <link href="{% static 'css/main.css'%}" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: ZenBlog
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+    </head>
+    {% block 'registersection' %}
+  <body>
+<section class="vh-200" style="background-color: #9A616D;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form action="" method="post">
+                   {% csrf_token %}
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fas fa-cubes fa-2x me-3" style="color: #FF6219;"></i>
+                    <span class="h1 fw-bold mb-0">STEM</span>
+                  </div>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="name" name="name" class="form-control form-control-lg" />
+                    <label class="form-label" for="name">Full Name</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" name="email" class="form-control form-control-lg" />
+                    <label class="form-label" for="email">Email address</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg" />
+                    <label class="form-label" for="confirm_password">Confirm Password</label>
+                  </div>
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-success btn-lg btn-block" type="submit">Register</button>
+                  </div>
+                  <!-- <a class="small text-muted" href="#!">Forgot password?</a> -->
+                  <p class="mb-5 pb-lg-2" style="color: #393F81;">Already have an account? <a href="{% url 'login' %}"
+                      style="color: #393F81;">Log in</a></p>
+                  <a href="#!" class="small text-muted">Terms of use.</a>
+                  <a href="#!" class="small text-muted">Privacy policy</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+{% endblock %}
+</html>

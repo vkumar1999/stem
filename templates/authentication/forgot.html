@@ -1,0 +1,14 @@
+{% extends "auth.html" %}
+{% block content %}
+<h2>Forgot Password?</h2><br>
+<p>Enter your email address to reset your password.</p><br>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <br>
+    <div class="pt-1 mb-4">
+        <button class="btn btn-success btn-lg " type="submit">Reset Password</button>
+    </div>
+    <!-- <button type="submit">Reset Password</button> -->
+</form>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'profile_layout.html' %} <!-- If you have a base template -->
+{% block content %}
+    <h2 style="text-align: center; padding-top: 30px;">Create a New Blog Post</h2>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black" >
+                
+                  <form method="post" action="{% url 'addpost' %}" enctype="multipart/form-data">
+                     {% csrf_token %}
+                    <div class="form-outline mb-4" >
+                      <label class="form-label"for="category">Select Category:</label><br>
+                        <select id="category" name="category" class="form-control form-control-lg" >
+                            <option value="0">None</option>
+                            <option value="1">Science</option>
+                            <option value="2">Technology</option>
+                            <option value="3">Education</option>
+                            <option value="4">Medicine</option>
+                        </select><br><br>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="title" >Title:</label><br>
+                      <input type="text" id="title" name="title" required class="form-control form-control-lg"><br><br> 
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="content">Content:</label><br>
+                        <textarea id="content" name="content" rows="4" cols="50" required class="form-control form-control-lg"></textarea><br><br>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="image">Upload Image:</label><br>
+                        <input type="file" id="image" name="image" accept="image/*" required class="form-control form-control-lg" ><br><br>
+                    </div>
+
+
+                    <div class="pt-1 mb-4">
+                      <button class="btn btn-success btn-lg btn-block" type="submit">Add post</button>
+                    </div>
+                  </form>
+                
+                </div>
+              </div>
+{% endblock %}

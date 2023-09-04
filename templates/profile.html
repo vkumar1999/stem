@@ -1,0 +1,26 @@
+{% extends 'profile_layout.html' %}
+{% block title %}
+  Profile Page
+{% endblock %}
+{% block content %}   
+<!-- ======= Breadcrumbs ======= -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-6 info">
+              <!-- <h4>Name:</h4> -->
+              <h2>Welcome, {{ user.username }}!</h2>
+              <h4>E-mail address, {{user.email}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Contact Section -->
+{% endblock %}
